@@ -1,12 +1,10 @@
 buildscript {
     repositories {
-        google()
-        mavenCentral()
+        google()  // Ensure this is present
+        mavenCentral()  // Ensure this is present
     }
-
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.1.1'
-        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.0"  // only if using Kotlin
-        classpath 'dev.flutter:flutter-gradle-plugin:1.1.10' // update Flutter Gradle plugin
+        classpath 'com.android.tools.build:gradle:7.4.2'  // Your Android Gradle version
+        classpath 'dev.flutter:flutter-gradle-plugin:1.0.0'  // <-- This is the problematic line
     }
 }
